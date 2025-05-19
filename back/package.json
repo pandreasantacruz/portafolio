@@ -13,6 +13,7 @@
     "start": "node dist/index.js"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.15.18",
@@ -39,6 +40,7 @@
     "content-type": "^1.0.5",
     "cookie": "^0.7.2",
     "cookie-signature": "^1.2.2",
+    "cors": "^2.8.5",
     "debug": "^4.4.1",
     "depd": "^2.0.0",
     "dotenv": "^16.5.0",
