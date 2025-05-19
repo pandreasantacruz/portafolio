@@ -1,10 +1,9 @@
+import "dotenv/config"; // Esto debe ir primero
 import "reflect-metadata";
-import express from "express";
-import dotenv from "dotenv";
 import { AppDataSource } from "./database/data.source";
-import contactRoutes from "./routes/contact.routes";
 import { PORT } from "./config/envs";
 import server from "./server";
+import contactRoutes from "./routes/contact.routes";
 
 AppDataSource.initialize()
   .then(() => {
@@ -13,4 +12,4 @@ AppDataSource.initialize()
       console.log(` Servidor corriendo en http://localhost:${PORT}`);
     });
   })
-  .catch((err) => console.error("Error al conectar DB:", err));
+  .catch((err) => console.error(" Error al conectar DB:", err));
