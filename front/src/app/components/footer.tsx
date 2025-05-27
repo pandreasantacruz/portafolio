@@ -73,8 +73,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-8 text-sm text-center text-gray-500">
-        © {new Date().getFullYear()} Paula Andrea Santacruz - Desarrolladora.
-        Todos los derechos reservados.
+        © {new Date().getFullYear()}
+        Paula Andrea Santacruz - Desarrolladora. Todos los derechos reservados.
       </div>
     </footer>
   );

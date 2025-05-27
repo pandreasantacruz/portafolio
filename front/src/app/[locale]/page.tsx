@@ -1,15 +1,12 @@
 import { useTranslations } from "next-intl";
-import { LanguageSwitcher } from "./components/LanguageSwitcher";
+import { Link } from "@/i18n/navigation";
 
-export default function Home() {
-  const t = useTranslations();
-
+export default function HomePage() {
+  const t = useTranslations("HomePage");
   return (
-    <main>
-      <LanguageSwitcher />
-
-      <h1>{t("greeting")}</h1>
-      <p>{t("portfolio")}</p>
-    </main>
+    <div>
+      <h1>{t("title")}</h1>
+      <Link href="/about">{t("about")}</Link>
+    </div>
   );
 }

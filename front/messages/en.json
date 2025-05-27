@@ -1,4 +1,6 @@
 {
-  "greeting": "Hi, I'm Paula",
-  "portfolio": "This is my portfolio"
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  }
 }
