@@ -22,7 +22,7 @@ const Navbar = () => {
       >
         <div className="flex items-center gap-8">
           <Link href={routes}>
-            <img src="" alt="logo" className="w-auto h-12  " />
+            <img alt="logo" className="w-auto h-12  " />
           </Link>
         </div>
 
