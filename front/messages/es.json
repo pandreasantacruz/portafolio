@@ -2,5 +2,15 @@
   "HomePage": {
     "title": "Si funciono",
     "about": "SI SI COLOMBIA"
+  },
+  "Navbar": {
+    "home": "Inicio"
+  },
+  "Footer": {
+    "h1": "Sobre mi",
+    "p1": "Soy Paula Andrea Santacruz, desarrolladora front-end junior con formación en ingeniería. Me apasiona el diseño funcional, las tecnologías web modernas y la sostenibilidad. Desarrollo interfaces de usuario accesibles, responsivas y con impacto real.",
+    "h2": " ¿Tienes un proyecto en mente?",
+    "p2": "Política de Protección de Datos",
+    "h3": "Sígueme"
   }
 }
