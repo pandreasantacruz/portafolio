@@ -2,5 +2,15 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+  "Navbar": {
+    "home": "Home"
+  },
+  "Footer": {
+    "h1": "About me",
+    "p1": "I'm Paula Andrea Santacruz, a Junior Front-End Developer with an engineering background. I'm passionate about functional design, web technologies, and sustainability. I build modern, accessible, and impactful user interfaces.",
+    "h2": "Got a project in mind?",
+    "p2": "Privacy Policy",
+    "h3": "Let’s stay in touch"
   }
 }
