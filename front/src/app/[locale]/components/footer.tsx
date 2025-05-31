@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
           </Link>
           <Link href="/dataTreatment">
-            <p className="text-justify pt-2 text-gray-400 ">{t("p2")} </p>
+            <p className="pt-2 text-justify text-gray-400 ">{t("p2")} </p>
           </Link>
         </div>
 
@@ -68,8 +68,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-8 text-sm text-center text-gray-500">
-        © {new Date().getFullYear()}
-        Paula Andrea Santacruz - Desarrolladora. Todos los derechos reservados.
+        © {new Date().getFullYear()}. Paula Andrea Santacruz - Desarrolladora.
+        Todos los derechos reservados.
       </div>
     </footer>
   );
