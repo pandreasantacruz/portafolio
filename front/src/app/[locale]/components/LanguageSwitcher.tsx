@@ -6,15 +6,19 @@ export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const changeLocale = (locale: string) => {
-    const newPath = pathname.replace(/^\/(en|es)/, `/${locale}`);
+  // Detecta el idioma actual
+  const currentLocale = pathname.startsWith("/en") ? "en" : "es";
+
+  // Alterna al otro idioma
+  const toggleLocale = () => {
+    const newLocale = currentLocale === "es" ? "en" : "es";
+    const newPath = pathname.replace(/^\/(en|es)/, `/${newLocale}`);
     router.push(newPath);
   };
 
   return (
-    <div>
-      <button onClick={() => changeLocale("es")}>ES</button>
-      <button onClick={() => changeLocale("en")}>EN</button>
-    </div>
+    <button onClick={toggleLocale} className="p-1 border rounded">
+      {currentLocale === "es" ? "EN" : "ES"}
+    </button>
   );
 }
