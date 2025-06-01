@@ -6,7 +6,7 @@
   --foreground: #171717;
 }
 [data-theme="dark"] {
-  --background: black;
+  --background: #101820;
   --foreground: white;
 }
 @theme inline {
