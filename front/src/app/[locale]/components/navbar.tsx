@@ -1,28 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { Link } from "@/i18n/navigation";
-//import { routes } from "../../routes/routes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { routes } from "../routes/routes";
 import { IoClose } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import ThemeToggle from "./ThemeToggle";
-// import { FiMenu } from "react-icons/fi";
-// import { IoClose } from "react-icons/io5";
-// import { useAuth } from "@/app/contextos/contextoAuth";
+
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  //const isPremium = user?.subscriptionType === "premium";
   const t = useTranslations("Navbar");
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Si aún no está montado, no mostramos el logo (evita hydration error)
+  if (!mounted) return null;
+  const src = theme === "dark" ? "/LogoDark.png" : "/Logo.png";
   return (
-    <div className="sticky z-50 bg-fondo bg-opacity-80 backdrop-blur-md">
-      <nav className="flex items-center justify-between h-24 p-4 mx-auto shadow-xl text-foreground ring-2 ring-gray-300 ring-opacity-100 bg-opacity-80 font-poppins">
+    <div className="fixed top-0 z-50 w-full bg-opacity-80 backdrop-blur-md">
+      <nav className="flex items-center justify-between h-24 p-4 mx-auto shadow-xl text-foreground ring-2 ring-gray-300 ring-opacity-100 bg-opacity-80">
         <div className="flex items-center gap-8">
-          <img src="/Logo.png" alt="logo" className="w-auto h-16 " />
+          <img src={src} alt="logo" className="w-auto h-16 " />
         </div>
 
         <div className="lg:hidden">
