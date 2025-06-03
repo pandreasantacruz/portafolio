@@ -4,7 +4,7 @@
     "about": "SI SI COLOMBIA"
   },
   "Navbar": {
-    "home": "Inicio"
+    "home": "INICIO"
   },
   "Footer": {
     "h1": "Sobre mi",
@@ -12,5 +12,10 @@
     "h2": " ¿Tienes un proyecto en mente?",
     "p2": "Política de Protección de Datos",
     "h3": "Sígueme"
+  },
+  "Aboutme": {
+    "h1": "SOBRE MI",
+    "h2": "Explora mi portafolio",
+    "h3": "Hola! Soy Paula Andrea Santacruz, Ingeniera y Desarrolladora Full Stack con enfoque en Frontend. Apasionada por la tecnología, el diseño y el desarrollo sostenible, combino habilidades técnicas y creativas para construir soluciones digitales innovadoras, funcionales y visualmente atractivas."
   }
 }
