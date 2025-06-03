@@ -1,33 +1,32 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React from "react";
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 
 const AboutMe = () => {
+  const t = useTranslations("Aboutme");
+
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 1 }}
-    >
-      <div className="grid grid-cols-2 gap-4 py-4 md:px-16 md:grid-cols-2 ">
-        <div className="flex flex-col transition-transform duration-300 ring-2 hover:scale-110 ring-gray-300">
-          <h2 className="py-2 text-3xl font-bold text-center ">
-            Nuestra ubicación
-          </h2>
-          <h3 className="text-center text-1xl ">
-            Centro Comercial Andino Cra. 11 #82-71, Bogotá
-          </h3>
-        </div>
-        <div className=" dark:bg-black dark:text-white">
-          {" "}
-          <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-fondo dark:bg-black dark:text-white">
-            <h1 className="mt-6 text-4xl font-bold">Hola, prueba Dark Mode</h1>
-            <p className="mt-2 text-lg"></p>
-          </div>
+    <div className="grid w-full grid-cols-1 h-auto gap-4 py-4 my-2 sm:px-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:px-16 ring-8 ring-[#EF3C62]">
+      <div className="flex flex-col justify-center pt-4 m-0 dark:bg-black dark:text-white">
+        <h2 className=" inline-block  bg-[#B3C3F3] font-bold text-4xl py-2 px-4 w-max">
+          {t("h1")}
+        </h2>
+        <h2 className="py-4 text-xl font-bold ">{t("h2")} </h2>
+        <h3 className="text-2xl text-justify ">{t("h3")} </h3>
+      </div>
+      <div className=" dark:bg-black dark:text-white">
+        {" "}
+        <div className="flex flex-col items-center justify-center p-8 dark:bg-black dark:text-white">
+          <img
+            src="/Aboutme.png"
+            alt="logo"
+            className="w-auto h-120 bg-[#B3C3F3] rounded-full "
+          />{" "}
+          <p className="mt-2 text-lg"></p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

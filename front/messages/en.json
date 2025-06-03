@@ -4,7 +4,7 @@
     "about": "Go to the about page"
   },
   "Navbar": {
-    "home": "Home"
+    "home": "HOME"
   },
   "Footer": {
     "h1": "About me",
@@ -12,5 +12,10 @@
     "h2": "Got a project in mind?",
     "p2": "Privacy Policy",
     "h3": "Let’s stay in touch"
+  },
+  "Aboutme": {
+    "h1": "ABOUT ME",
+    "h2": "Explore my portfolio",
+    "h3": "Hello! I'm Paula Andrea Santacruz — an Engineer and Full Stack Developer with a focus on Frontend. Passionate about technology, design, and sustainable development, I combine technical and creative skills to build innovative, functional, and visually engaging digital solutions."
   }
 }

@@ -21,7 +21,6 @@ const Navbar = () => {
     setMounted(true);
   }, []);
 
-  // Si aún no está montado, no mostramos el logo (evita hydration error)
   if (!mounted) return null;
   const src = theme === "dark" ? "/LogoDark.png" : "/Logo.png";
   return (
@@ -46,7 +45,10 @@ const Navbar = () => {
           } w-full lg:flex lg:w-auto lg:items-center lg:justify-center transition-all duration-300 ease-in-out`}
         >
           <div className="flex flex-col items-center pl-1 lg:flex-row lg:gap-8 lg:space-x-8">
-            <a href="#welcome" className="transition hover:text-verde">
+            <a
+              href="#welcome"
+              className="transition font-bebas hover:text-verde"
+            >
               {t("home")}
             </a>
             <a href="#aboutme" className="transition hover:text-verde">
