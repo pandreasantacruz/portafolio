@@ -1,10 +1,11 @@
 "use client";
-import AboutMe from "./aboutMe/page";
+import AboutMe from "./components/Aboutme";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import Welcome from "./welcome/page";
+import Welcome from "./components/Welcome";
 import { useEffect, useState } from "react";
 import LoadingIndicator from "./components/LogingIndicator";
+import Technologies from "./components/Technologies";
 export default function Home() {
   const t = useTranslations("HomePage");
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,9 @@ export default function Home() {
           </section>
           <section id="aboutme">
             <AboutMe></AboutMe>
+          </section>
+          <section id="technologies">
+            <Technologies />
           </section>
           <div>
             <h1>{t("title")}</h1>

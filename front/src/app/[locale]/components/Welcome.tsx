@@ -16,7 +16,7 @@ const Welcome = () => {
     theme === "dark" ? "/ImagenInicialDark.jpg" : "/ImagenInicial.jpg";
 
   return (
-    <div className="relative w-full mx-auto mt-28 max-w-10xl">
+    <div className="relative w-full mx-auto overflow-hidden mt-28 max-w-10xl ">
       {" "}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
