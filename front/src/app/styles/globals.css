@@ -5,6 +5,7 @@
   --background: #ffffff;
   --foreground: #101820;
 }
+
 [data-theme="dark"] {
   --background: #101820;
   --foreground: white;
@@ -20,4 +21,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  @apply min-h-screen bg-center bg-repeat bg-cover;
+  background-image: url("/fondo.png");
 }

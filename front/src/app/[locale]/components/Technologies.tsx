@@ -18,8 +18,8 @@ const Technologies = () => {
   }, []);
 
   return (
-    <div className="px-4 pb-16 sm:px-8 lg:px-16 border-b-8 border-[#E0004D]">
-      <h2 className=" font-sans bg-[#B3C3F3] font-bold text-2xl sm:text-3xl md:text-4xl mt-8 ml-auto py-2 px-4 w-max">
+    <div className="px-4 pb-12 sm:px-8 lg:px-16 border-b-8 border-[#E0004D]">
+      <h2 className="font-sans bg-[#B3C3F3] font-bold text-2xl sm:text-4xl md:text-4xl mt-8 ml-auto py-2 mr-0 px-4 w-max">
         {t("Th1")}
       </h2>
       <p className="mt-2 text-xl text-justify font-bebas sm:text-base md:text-lg">
@@ -30,16 +30,19 @@ const Technologies = () => {
         {imgTech.map((image, index) => (
           <motion.div
             onClick={() => setCurrentIndex(index)}
-            key={`${image}-${index}`}
-            className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-[#B3C3F3] shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 ${
+            key={`${image.label}-${index}`}
+            className={`flex flex-col items-center justify-center w-20 sm:w-24 md:w-28 bg-[#B3C3F3] shadow-md rounded-lg transition-transform duration-300 hover:scale-105 ${
               index === currentIndex ? "opacity-100" : "opacity-50"
             }`}
           >
             <img
-              src={image}
+              src={image.src}
               alt={`Technologies ${index + 1}`}
-              className="object-cover w-full h-full p-2"
+              className="object-contain w-full h-20 p-2"
             />
+            <span className="mt-1 font-sans text-xs font-semibold text-center">
+              {image.label}
+            </span>
           </motion.div>
         ))}
       </div>
