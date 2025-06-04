@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import CarouselXtrme from "./XtremegymPictures";
+import CarouselAppointments from "./AppointmentsPictures";
 
-const Xtremegym = () => {
+const Appointments = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Datos del modal (puedes parametrizar o traer de props)
-  const title = "Xtreme Gym";
-  const content = <CarouselXtrme />;
+  const title = "Appointments";
+  const content = <CarouselAppointments />;
 
   return (
     <>
@@ -22,7 +22,7 @@ const Xtremegym = () => {
             className="object-cover w-full h-full pb-2 rounded"
           />
         </div>
-        <p className="font-bebas">Front End Developer</p>
+        <p className="font-bebas">Full Stack Developer</p>
       </div>
 
       {isOpen && (
@@ -50,4 +50,4 @@ const Xtremegym = () => {
     </>
   );
 };
-export default Xtremegym;
+export default Appointments;
