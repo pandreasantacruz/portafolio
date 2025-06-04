@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-import { HOST, PORT_PG, USERNAME, PASSWORD, DATABASE } from "../config/envs";
+import { HOST, PORT_PG } from "../config/envs";
 import { Contact } from "../entities/Contact";
 
 export const AppDataSource = new DataSource({
