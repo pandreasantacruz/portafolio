@@ -15,7 +15,7 @@ const Footer = () => {
         <div className=" hover:text-verde">
           <h3 className="mb-3 text-lg font-semibold "> {t("h1")}</h3>
           <p className="text-justify text-gray-400 hover:text-verde">
-            {t("p1")}
+            {t("p1") Hola}
           </p>
         </div>
 
