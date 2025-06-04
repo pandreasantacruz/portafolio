@@ -6,6 +6,7 @@ import Welcome from "./components/Welcome";
 import { useEffect, useState } from "react";
 import LoadingIndicator from "./components/LogingIndicator";
 import Technologies from "./components/Technologies";
+import Proyects from "./components/Proyects";
 export default function Home() {
   const t = useTranslations("HomePage");
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,8 @@ export default function Home() {
           <section id="technologies">
             <Technologies />
           </section>
+          <Proyects />
+
           <div>
             <h1>{t("title")}</h1>
             <Link href="/about">{t("about")}</Link>

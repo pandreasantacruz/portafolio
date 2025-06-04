@@ -22,16 +22,17 @@ const Navbar = () => {
   }, []);
 
   if (!mounted) return null;
+
   const src = theme === "dark" ? "/LogoDark.png" : "/Logo.png";
+  console.log("Tema actual:", theme);
+
   return (
-    <div className="fixed top-0 z-50 w-full bg-opacity-80 backdrop-blur-md">
-      <nav className="flex items-center justify-between h-24 px-4 mx-auto bg-white shadow-xl text-foreground ring-2 ring-gray-300 ring-opacity-100 dark:bg-black bg-opacity-80">
-        {/* Logo */}
+    <div className="fixed top-0 z-50 w-full ">
+      <nav className="flex items-center justify-between h-24 px-4 mx-auto shadow-xl ring-2 ring-gray-300 ring-opacity-100">
         <div className="flex items-center gap-4">
           <img src={src} alt="logo" className="w-auto h-16" />
         </div>
 
-        {/* Botón hamburguesa visible en móviles */}
         <div className="lg:hidden">
           <button
             className="text-2xl transition hover:text-verde"
@@ -41,22 +42,22 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Menú responsive */}
         <div
-          className={`
-        ${isOpen ? "block" : "hidden"}
-        absolute top-24 left-0 w-full bg-white dark:bg-black text-center lg:static lg:block lg:w-auto
-        transition-all duration-300 ease-in-out
-      `}
+          className={`${
+            isOpen ? "block" : "hidden"
+          } absolute top-24 left-0 w-full text-center lg:static lg:block lg:w-auto transition-all duration-300 ease-in-out `}
         >
-          <div className="flex flex-col items-center gap-4 py-4 lg:flex-row lg:gap-8 lg:py-0">
+          <div className="flex flex-col items-center gap-4 py-4 text-black lg:flex-row lg:gap-8 lg:py-0">
             <a
               href="#welcome"
-              className="transition font-bebas hover:text-verde"
+              className="p-1 transition font-bebas bg-[#B3C3F3] "
             >
               {t("home")}
             </a>
-            <a href="#aboutme" className="transition hover:text-verde">
+            <a
+              href="#aboutme"
+              className=" bg-[#B3C3F3] transition hover:text-verde p-1"
+            >
               {t("aboutme")}
             </a>
             <LanguageSwitcher />
@@ -67,5 +68,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;

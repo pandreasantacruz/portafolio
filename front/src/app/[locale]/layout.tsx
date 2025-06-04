@@ -39,7 +39,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} ${bebasNeue.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${bebasNeue.variable} antialiased `}
       >
         <ThemeProvider>
           <NextIntlClientProvider>
