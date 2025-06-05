@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import Image from "next/image";
-import { imgXtreme } from "../../helpers/helperXtreme";
+import { imgXtreme } from "../../helpers/imgXtreme";
 import { useTranslations } from "next-intl";
 
 const CarouselXtrme = () => {
@@ -55,7 +55,7 @@ const CarouselXtrme = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-[#B3C3F3]" : "bg-[#EF3C62]"
+                index === currentIndex ? "bg-verde" : "bg-grisP"
               }`}
             ></button>
           ))}

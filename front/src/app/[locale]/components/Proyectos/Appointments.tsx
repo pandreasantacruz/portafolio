@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import CarouselXtrme from "./XtremegymPictures";
-const Xtremegym = () => {
+import CarouselAppointments from "./AppointmentsPictures";
+
+const Appointments = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Datos del modal (puedes parametrizar o traer de props)
-  const title = "Xtreme Gym";
-  const content = <CarouselXtrme />;
+  const title = "Appointments";
+  const content = <CarouselAppointments />;
 
   return (
     <>
-      {/* Contenedor clickable para abrir modal */}
       <div
         className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
         onClick={() => setIsOpen(true)}
@@ -22,10 +22,9 @@ const Xtremegym = () => {
             className="object-cover w-full h-full pb-2 rounded"
           />
         </div>
-        <p className="font-bebas">Front End Developer</p>
+        <p className="font-bebas">Full Stack Developer</p>
       </div>
 
-      {/* Modal */}
       {isOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
@@ -51,4 +50,4 @@ const Xtremegym = () => {
     </>
   );
 };
-export default Xtremegym;
+export default Appointments;
