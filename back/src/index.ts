@@ -8,7 +8,7 @@ import contactRoutes from "./routes/contact.routes";
 AppDataSource.initialize()
   .then(() => {
     console.log(" DB conectada");
-    server.listen(PORT, () => {
+    server.listen(PORT,'0.0.0.0', () => {
       console.log(` Servidor corriendo en http://localhost:${PORT}`);
     });
   })
