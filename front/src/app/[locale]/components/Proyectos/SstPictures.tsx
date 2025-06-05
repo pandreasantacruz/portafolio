@@ -2,14 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import Image from "next/image";
-import { imgXtreme } from "../../helpers/imgXtreme";
+import { imgSST } from "../../helpers/imgSst";
 import { useTranslations } from "next-intl";
 
 const CarouselSST = () => {
-  const t = useTranslations("ExtremeGym");
+  const t = useTranslations("Sst");
   const tP = useTranslations("Proyects");
 
-  const images = imgXtreme;
+  const images = imgSST;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -65,15 +65,15 @@ const CarouselSST = () => {
       {/* Texto */}
       <div className="flex flex-col justify-center w-full max-w-md px-4 space-y-4 md:px-0">
         <p className="text-lg font-medium text-justify break-words font-bebas">
-          {t("Eh1")}
+          {t("SSTH1")}
         </p>
         <p className="text-lg font-medium text-justify break-words font-bebas">
           {tP("Pr")}
         </p>
         <p className="text-lg text-justify break-words font-bebas">
-          {t("Eh2")}
+          {t("SSTH2")}
         </p>
-        <div className="flex flex-row gap-4">
+        {/* <div className="flex flex-row gap-4">
           <a target="_blank" href="https://pf-extreme-gym.vercel.app/">
             <button className="px-4 py-2 bg-[#B3C3F3]  rounded-lg hover:bg-[#EF3C62]">
               Demo
@@ -87,7 +87,7 @@ const CarouselSST = () => {
               {tP("Gh")}
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

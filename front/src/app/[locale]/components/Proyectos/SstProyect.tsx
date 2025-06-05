@@ -5,7 +5,7 @@ const SstProyect = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Datos del modal (puedes parametrizar o traer de props)
-  const title = "SST PROYECT";
+  const title = "OHS MONITORING";
   const content = <CarouselSST />;
 
   return (
@@ -14,10 +14,10 @@ const SstProyect = () => {
         className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
         onClick={() => setIsOpen(true)}
       >
-        <h3 className="pb-2 font-sans font-bold text-center">Proyecto SST </h3>
+        <h3 className="pb-2 font-sans font-bold text-center">OHS MONITORING</h3>
         <div className="flex items-center w-full h-40">
           <img
-            src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749065258/xtreme1_lhmgyp.png"
+            src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749154551/sst3_vonx8u.png"
             alt="imagenXtremeGym"
             className="object-cover w-full h-full pb-2 rounded"
           />
