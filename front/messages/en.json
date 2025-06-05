@@ -5,7 +5,9 @@
   },
   "Navbar": {
     "home": "HOME",
-    "aboutme": "ABOUT ME"
+    "aboutme": "ABOUT ME",
+    "techskill": "TECHNICAL SKILL",
+    "mywork": "MY WORK"
   },
   "Footer": {
     "h1": "About me",

@@ -13,7 +13,9 @@ const Welcome = () => {
 
   if (!mounted) return null;
   const src =
-    theme === "dark" ? "/ImagenInicialDark.jpg" : "/ImagenInicial.jpg";
+    theme === "dark"
+      ? "https://res.cloudinary.com/dpo25wgdo/image/upload/v1749146685/ImagenInicialDark_hzdfee.jpg"
+      : "https://res.cloudinary.com/dpo25wgdo/image/upload/v1749146732/ImagenInicial_panluc.jpg";
 
   return (
     <div className="relative w-full mx-auto overflow-hidden mt-28 max-w-10xl ">
@@ -26,7 +28,7 @@ const Welcome = () => {
         <div className="relative w-full aspect-[16/9]" key={theme}>
           <Image
             src={src}
-            alt="Imagen Modo Claro"
+            alt="Imagen"
             fill
             className="block object-contain dark:hidden"
           />

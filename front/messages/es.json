@@ -5,7 +5,9 @@
   },
   "Navbar": {
     "home": "INICIO",
-    "aboutme": "SOBRE MI"
+    "aboutme": "SOBRE MI",
+    "techskill": "HABILIDADES TÉCNICAS",
+    "mywork": "MIS PROYECTOS"
   },
   "Footer": {
     "h1": "Sobre mi",
