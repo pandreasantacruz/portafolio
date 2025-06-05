@@ -57,6 +57,15 @@ const Navbar = () => {
             <a href="#aboutme" className=" bg-[#B3C3F3] transition p-1">
               {t("aboutme")}
             </a>
+            <a href="#aboutme" className=" bg-[#B3C3F3] transition p-1">
+              {t("techskill")}
+            </a>
+            <a href="#aboutme" className=" bg-[#B3C3F3] transition p-1">
+              {t("mywork")}
+            </a>
+            <a href="#aboutme" className=" bg-[#B3C3F3] transition p-1">
+              {t("aboutme")}
+            </a>
             <LanguageSwitcher />
             <ThemeToggle />
           </div>

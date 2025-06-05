@@ -2,14 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import Image from "next/image";
-import { imgXtreme } from "../../helpers/imgXtreme";
+import { imgETech } from "../../helpers/imgETech";
 import { useTranslations } from "next-intl";
 
 const CarouselEcommerce = () => {
   const t = useTranslations("Ecommerce");
   const tP = useTranslations("Proyects");
 
-  const images = imgXtreme;
+  const images = imgETech;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -74,14 +74,14 @@ const CarouselEcommerce = () => {
           {t("ECh2")}
         </p>
         <div className="flex flex-row gap-4">
-          <a target="_blank" href="https://pf-extreme-gym.vercel.app/">
+          <a target="_blank" href="">
             <button className="px-4 py-2 bg-[#B3C3F3]  rounded-lg hover:bg-[#EF3C62]">
-              Demo
+              Video Demo
             </button>
           </a>
           <a
             target="_blank"
-            href="https://github.com/ExtremeGym25/PF-Extreme-Gym"
+            href="https://github.com/pandreasantacruz/Ecommerceme-Gym"
           >
             <button className="px-4 py-2 bg-[#B3C3F3]  rounded-lg hover:bg-[#EF3C62]">
               {tP("Gh")}

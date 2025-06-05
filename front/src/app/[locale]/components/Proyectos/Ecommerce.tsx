@@ -17,8 +17,8 @@ const Ecommerce = () => {
         <h3 className="pb-2 font-sans font-bold text-center">E-TECH </h3>
         <div className="flex items-center w-full h-40">
           <img
-            src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749065258/xtreme1_lhmgyp.png"
-            alt="imagenXtremeGym"
+            src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749145327/Etech2_kyd583.png"
+            alt="imagenETech"
             className="object-cover w-full h-full pb-2 rounded"
           />
         </div>
@@ -28,11 +28,11 @@ const Ecommerce = () => {
       {isOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
-          onClick={() => setIsOpen(false)} // cerrar al clicar fuera
+          onClick={() => setIsOpen(false)}
         >
           <div
             className="relative w-11/12 max-w-4xl max-h-full p-6 overflow-auto bg-white rounded-lg"
-            onClick={(e) => e.stopPropagation()} // no cerrar si clic adentro
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="absolute text-2xl font-bold text-gray-700 top-4 right-4 hover:text-red-600"
