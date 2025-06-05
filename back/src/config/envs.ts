@@ -1,5 +1,5 @@
 import "dotenv/config";
-export const PORT = process.env.PORT || 3001;
+export const PORT = process.env.PORT;
 
 export const HOST = process.env.DB_HOST;
 export const PORT_PG = process.env.DB_PORT;
@@ -12,4 +12,5 @@ console.log("ENV DEBUG:", {
   USERNAME,
   PASSWORD: typeof PASSWORD,
   DATABASE,
+  PORT,
 });
