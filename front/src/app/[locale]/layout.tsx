@@ -7,6 +7,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "react-hot-toast";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -44,6 +45,39 @@ export default async function RootLayout({
         <ThemeProvider>
           <NextIntlClientProvider>
             <Navbar />
+            <Toaster
+              toastOptions={{
+                success: {
+                  style: {
+                    background: "#175699",
+                    color: "white",
+                    borderRadius: "8px",
+                    padding: "16px",
+                    boxShadow: "0 4px 14px rgba(0, 0, 0, 0.25)",
+                  },
+                  iconTheme: {
+                    primary: "white",
+                    secondary: "#16a34a",
+                  },
+                },
+                error: {
+                  style: {
+                    background: "#ef4444",
+                    color: "white",
+                    borderRadius: "8px",
+                    padding: "16px",
+                    boxShadow: "0 4px 14px rgba(0, 0, 0, 0.25)",
+                  },
+                  iconTheme: {
+                    primary: "white",
+                    secondary: "#dc2626",
+                  },
+                },
+                position: "top-center",
+                duration: 2000,
+              }}
+            />
+
             {children}
             <Footer />
           </NextIntlClientProvider>
