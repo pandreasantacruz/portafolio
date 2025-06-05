@@ -1,33 +1,41 @@
 import React, { useState } from "react";
-import CarouselXtrme from "./XtremegymPictures";
 
 const Xtremegym = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Datos del modal (puedes parametrizar o traer de props)
-  const title = "Xtreme Gym";
-  const content = <CarouselXtrme />;
+  const title = "Entrenamiento Integral en un Solo Lugar";
+  const content = (
+    <img
+      src="https://res.cloudinary.com/dixcrmeue/image/upload/v1743870277/home1_vob5wv.png"
+      alt="imagenhome1 grande"
+      className="w-full h-auto rounded"
+    />
+  );
 
   return (
     <>
+      {/* Contenedor clickable para abrir modal */}
       <div
-        className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
+        className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-verde hover:scale-110"
         onClick={() => setIsOpen(true)}
       >
-        <h3 className="pb-2 font-sans font-bold text-center">XTREME GYM </h3>
         <div className="flex items-center w-full h-40">
           <img
-            src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749065258/xtreme1_lhmgyp.png"
-            alt="imagenXtremeGym"
+            src="https://res.cloudinary.com/dixcrmeue/image/upload/v1743870277/home1_vob5wv.png"
+            alt="imagenhome1"
             className="object-cover w-full h-full pb-2 rounded"
           />
         </div>
-        <p className="font-bebas">Front End Developer</p>
+        <h3 className="pb-2 font-bold text-center">
+          Entrenamiento Integral en un Solo Lugar
+        </h3>
       </div>
 
+      {/* Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
           onClick={() => setIsOpen(false)} // cerrar al clicar fuera
         >
           <div
@@ -42,7 +50,7 @@ const Xtremegym = () => {
               &times;
             </button>
 
-            <h2 className="mb-4 text-3xl font-bold text-black">{title}</h2>
+            <h2 className="mb-4 text-3xl font-bold">{title}</h2>
             <div>{content}</div>
           </div>
         </div>

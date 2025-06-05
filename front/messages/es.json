@@ -22,19 +22,5 @@
   "Technologies": {
     "Th1": "HABILIDADES TÉCNICAS",
     "Tp1": "Estas son las principales tecnologías con las que trabajo para desarrollar soluciones sólidas, eficientes y escalables."
-  },
-  "Proyects": {
-    "Ph1": "MIS PROYECTOS",
-    "Pp1": "Aquí puedes ver una muestra de mi trabajo como desarrolladora.",
-    "Pr": "Responsabilidades",
-    "Gh": "Código en GitHub"
-  },
-  "ExtremeGym": {
-    "Eh1": "Aplicación web integral dirigida a deportistas y entusiastas del fitness y los deportes extremos. Permite reservar clases, recibir planes de entrenamiento, acceder a contenido exclusivo y conectar con una comunidad activa de usuarios.",
-    "Eh2": "Diseñé e implementé interfaces responsivas y fáciles de usar con React, Next, Tailwind CSS y Figma. Creé la identidad visual completa. Desarrollé funcionalidades clave: autenticación con JWT, paneles de usuario/admin, reservas, historial, pagos con Stripe y subida de imágenes con Cloudinary. Gestioné la integración con la API mediante Axios."
-  },
-  "Ecommerce": {
-    "ECh1": "Aplicación web especializada en productos tecnológicos. Permite explorar productos, agregar a favoritos, gestionar compras y navegar de forma fluida y personalizada. Desarrollada con enfoque mobile-first y un diseño atractivo y profesional.",
-    "ECh2": " Implementé la interfaz completa con Next.js, React y Tailwind CSS, garantizando una experiencia responsiva y accesible. Diseñé el logo y la identidad visual. Integré autenticación y persistencia de sesión con JWT, conectando correctamente con el backend. Desarrollé funcionalidades esenciales: rutas dinámicas para productos, sistema de favoritos, carrito con totalizador, dashboard con historial y edición de perfil."
   }
 }
