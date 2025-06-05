@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-export const PORT = process.env.PORT;
+export const PORT =  Number(process.env.PORT) || 3001
 
 export const HOST = process.env.DB_HOST;
 export const PORT_PG = process.env.DB_PORT;
