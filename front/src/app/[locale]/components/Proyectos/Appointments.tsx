@@ -5,7 +5,7 @@ const Appointments = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Datos del modal (puedes parametrizar o traer de props)
-  const title = "Appointments";
+  const title = "CLINIC PROJECT";
   const content = <CarouselAppointments />;
 
   return (
@@ -14,10 +14,10 @@ const Appointments = () => {
         className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
         onClick={() => setIsOpen(true)}
       >
-        <h3 className="pb-2 font-sans font-bold text-center">XTREME GYM </h3>
+        <h3 className="pb-2 font-sans font-bold text-center">CLINIC PROJECT</h3>
         <div className="flex items-center w-full h-40">
           <img
-            src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749065258/xtreme1_lhmgyp.png"
+            src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749147997/Appoint1_zrbfuj.png"
             alt="imagenXtremeGym"
             className="object-cover w-full h-full pb-2 rounded"
           />

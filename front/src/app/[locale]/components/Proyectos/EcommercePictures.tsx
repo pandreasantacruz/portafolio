@@ -74,14 +74,17 @@ const CarouselEcommerce = () => {
           {t("ECh2")}
         </p>
         <div className="flex flex-row gap-4">
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href="https://res.cloudinary.com/dpo25wgdo/video/upload/v1749157519/Nuevo_proyecto_enfwqs.mp4"
+          >
             <button className="px-4 py-2 bg-[#B3C3F3]  rounded-lg hover:bg-[#EF3C62]">
               Video Demo
             </button>
           </a>
           <a
             target="_blank"
-            href="https://github.com/pandreasantacruz/Ecommerceme-Gym"
+            href="https://github.com/pandreasantacruz/Ecommerce"
           >
             <button className="px-4 py-2 bg-[#B3C3F3]  rounded-lg hover:bg-[#EF3C62]">
               {tP("Gh")}

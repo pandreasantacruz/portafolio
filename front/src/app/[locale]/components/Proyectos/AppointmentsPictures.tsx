@@ -2,14 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import Image from "next/image";
-import { imgXtreme } from "../../helpers/imgXtreme";
+import { imgAppoints } from "../../helpers/appoint";
 import { useTranslations } from "next-intl";
 
 const CarouselAppointments = () => {
-  const t = useTranslations("ExtremeGym");
+  const t = useTranslations("Appointments");
   const tP = useTranslations("Proyects");
 
-  const images = imgXtreme;
+  const images = imgAppoints;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -65,23 +65,26 @@ const CarouselAppointments = () => {
       {/* Texto */}
       <div className="flex flex-col justify-center w-full max-w-md px-4 space-y-4 md:px-0">
         <p className="text-lg font-medium text-justify break-words font-bebas">
-          {t("Eh1")}
+          {t("Appo1")}
         </p>
         <p className="text-lg font-medium text-justify break-words font-bebas">
           {tP("Pr")}
         </p>
         <p className="text-lg text-justify break-words font-bebas">
-          {t("Eh2")}
+          {t("Appo2")}
         </p>
         <div className="flex flex-row gap-4">
-          <a target="_blank" href="https://pf-extreme-gym.vercel.app/">
+          <a
+            target="_blank"
+            href="https://res.cloudinary.com/dpo25wgdo/video/upload/v1749159568/Nuevo_proyecto_clinica_fxljud.mp4"
+          >
             <button className="px-4 py-2 bg-[#B3C3F3]  rounded-lg hover:bg-[#EF3C62]">
-              Demo
+              Video Demo
             </button>
           </a>
           <a
             target="_blank"
-            href="https://github.com/ExtremeGym25/PF-Extreme-Gym"
+            href="https://github.com/pandreasantacruz/ProyectoClinica"
           >
             <button className="px-4 py-2 bg-[#B3C3F3]  rounded-lg hover:bg-[#EF3C62]">
               {tP("Gh")}

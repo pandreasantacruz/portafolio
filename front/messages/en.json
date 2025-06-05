@@ -38,5 +38,13 @@
   "Ecommerce": {
     "ECh1": "E-commerce web application focused on tech products. Users can browse items, add favorites, manage purchases, and enjoy a smooth, personalized experience. Built with a mobile-first approach and a modern, professional design.",
     "ECh2": "  Built the full UI using Next.js, React, and Tailwind CSS, ensuring a responsive and accessible experience. Designed the logo and full brand identity. Integrated authentication and session persistence with JWT, properly connected to the backend. Developed key e-commerce features: dynamic product pages (Next.js routes), persistent favorites, shopping cart with total, and user dashboard with purchase history and profile editing."
+  },
+  "Appointments": {
+    "Appo1": "Web application for medical appointment scheduling. Users can book appointments by specialty, add consultation details, and upload clinical history.",
+    "Appo2": "Designed the user interface in Figma with UX/UI principles. Built the frontend using React and TypeScript, ensuring full responsiveness. Developed the backend with Express, TypeScript, and TypeORM. Designed and managed the SQL database. Handled data flow between frontend and backend. Implemented key features: appointment scheduling by specialty, clinical history and consultation details. Led the entire development cycle as a fullstack developer."
+  },
+  "Sst": {
+    "SSTH1": "MVP currently  currently in development for Procimple (Colombia). A web application that allows companies to register, assign employees, and create dynamic, customizable inspections. Each company can manage its own inspections and execute them with performance metrics to verify compliance with Occupational Health and Safety (OHS) standards.",
+    "SSTH2": "Built the entire user interface using React, Next.js, and Tailwind CSS, delivering dynamic, responsive, and reusable components. Designed interactive flows for creating companies, employees, and customizable inspections. Implemented user-specific views for better role-based experience. Ensured accessibility and a smooth UX across mobile and desktop devices. Integrated frontend with backend endpoints to manage users, inspections, and compliance metrics."
   }
 }
