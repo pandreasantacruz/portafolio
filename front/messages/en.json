@@ -20,21 +20,7 @@
     "h3": "Hello! I'm Paula Andrea Santacruz — an Engineer and Full Stack Developer with a focus on Frontend. Passionate about technology, design, and sustainable development, I combine technical and creative skills to build innovative, functional, and visually engaging digital solutions."
   },
   "Technologies": {
-    "Th1": "TECHNICAL SKILL",
+    "Th1": "Technical Skills",
     "Tp1": "These are the main technologies I use to build solid, efficient, and scalable solutions."
-  },
-  "Proyects": {
-    "Ph1": "MY WORK",
-    "Pp1": "A selection of projects I’ve created or contributed to.",
-    "Pr": "Key Responsibilities ",
-    "Gh": "See Project on GitHub"
-  },
-  "ExtremeGym": {
-    "Eh1": "Comprehensive web application aimed at athletes and enthusiasts of fitness and extreme sports. It allows users to book classes, receive personalized training plans, access exclusive content, and connect with an active community. ",
-    "Eh2": "Designed and developed responsive, user-friendly interfaces using React, Next, Tailwind CSS, and Figma. Created the full brand identity. Implemented key features: authentication with JWT, user/admin dashboards, class bookings, workout history, Stripe payments, and Cloudinary image uploads. Managed API integration with Axios for smooth frontend-backend communication."
-  },
-  "Ecommerce": {
-    "ECh1": "E-commerce web application focused on tech products. Users can browse items, add favorites, manage purchases, and enjoy a smooth, personalized experience. Built with a mobile-first approach and a modern, professional design.",
-    "ECh2": "  Built the full UI using Next.js, React, and Tailwind CSS, ensuring a responsive and accessible experience. Designed the logo and full brand identity. Integrated authentication and session persistence with JWT, properly connected to the backend. Developed key e-commerce features: dynamic product pages (Next.js routes), persistent favorites, shopping cart with total, and user dashboard with purchase history and profile editing."
   }
 }

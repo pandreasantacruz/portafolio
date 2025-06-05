@@ -1,28 +1,63 @@
-import React from "react";
-import Xtremegym from "./Proyectos/Xtremegym";
-import { useTranslations } from "next-intl";
-import Ecommerce from "./Proyectos/Ecommerce";
-import Appointments from "./Proyectos/Appointments";
-import SstProyect from "./Proyectos/SstProyect";
+import React, { useState } from "react";
 
 const Proyects = () => {
-  const t = useTranslations("Proyects");
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Datos del modal (puedes parametrizar o traer de props)
+  const title = "Entrenamiento Integral en un Solo Lugar";
+  const content = (
+    <img
+      src="https://res.cloudinary.com/dixcrmeue/image/upload/v1743870277/home1_vob5wv.png"
+      alt="imagenhome1 grande"
+      className="w-full h-auto rounded"
+    />
+  );
 
   return (
-    <div className=" px-4 pb-12 sm:px-8 lg:px-16 border-b-8 border-[#E0004D]">
-      <h2 className="font-sans text-center bg-[#B3C3F3] font-bold text-2xl sm:text-4xl md:text-4xl mt-8  py-2 px-4">
-        {t("Ph1")}
+    <>
+      {" "}
+      <h2 className="font-sans inline-block  bg-[#B3C3F3] font-bold text-4xl py-2 px-4 w-max ">
+        Proyectos{" "}
       </h2>
-      <p className="mt-2 text-xl text-center font-bebas sm:text-base md:text-lg">
-        {t("Pp1")}
-      </p>
-      <div className="flex flex-wrap justify-center gap-4 py-4">
-        <SstProyect></SstProyect>
-        <Xtremegym></Xtremegym>
-        <Ecommerce></Ecommerce>
-        <Appointments></Appointments>
+      <div
+        className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-verde hover:scale-110"
+        onClick={() => setIsOpen(true)}
+      >
+        <div className="flex items-center w-full h-40">
+          <img
+            src="https://res.cloudinary.com/dixcrmeue/image/upload/v1743870277/home1_vob5wv.png"
+            alt="imagenhome1"
+            className="object-cover w-full h-full pb-2 rounded"
+          />
+        </div>
+        <h3 className="pb-2 font-bold text-center">
+          Entrenamiento Integral en un Solo Lugar
+        </h3>
       </div>
-    </div>
+      {/* Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+          onClick={() => setIsOpen(false)} // cerrar al clicar fuera
+        >
+          <div
+            className="bg-white rounded-lg w-11/12 max-w-4xl max-h-[90vh] p-6 relative overflow-auto"
+            onClick={(e) => e.stopPropagation()} // no cerrar si clic adentro
+          >
+            <button
+              className="absolute text-2xl font-bold text-gray-700 top-4 right-4 hover:text-red-600"
+              onClick={() => setIsOpen(false)}
+              aria-label="Cerrar modal"
+            >
+              &times;
+            </button>
+
+            <h2 className="mb-4 text-3xl font-bold">{title}</h2>
+            <div>{content}</div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 export default Proyects;
