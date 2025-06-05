@@ -1,4 +1,5 @@
-"use client";
+
+"use client"
 
 import Link from "next/link";
 import { FaSquareFacebook } from "react-icons/fa6";
@@ -16,13 +17,9 @@ const Footer = () => {
       <div className="grid grid-cols-1 gap-8 px-6 mx-auto transition max-w-7xl md:grid-cols-3">
         <div>
           <h3 className="mb-3 text-lg font-semibold "> {t("h1")}</h3>
-<<<<<<< HEAD
+
           <p className="text-justify text-gray-400 ">{t("p1")}</p>
-=======
-          <p className="text-justify text-gray-400 hover:text-verde">
-            {t("p1") Hola}
-          </p>
->>>>>>> 8df108dda471eb2c6544400319db399a14f42fdb
+
         </div>
 
         <div>
