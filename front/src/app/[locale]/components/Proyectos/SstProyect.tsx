@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import CarouselXtrme from "./XtremegymPictures";
-const Xtremegym = () => {
+import CarouselSST from "./SstPictures";
+
+const SstProyect = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Datos del modal (puedes parametrizar o traer de props)
-  const title = "Xtreme Gym";
-  const content = <CarouselXtrme />;
+  const title = "SST PROYECT";
+  const content = <CarouselSST />;
 
   return (
     <>
-      {/* Contenedor clickable para abrir modal */}
       <div
         className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
         onClick={() => setIsOpen(true)}
       >
-        <h3 className="pb-2 font-sans font-bold text-center">XTREME GYM </h3>
+        <h3 className="pb-2 font-sans font-bold text-center">Proyecto SST </h3>
         <div className="flex items-center w-full h-40">
           <img
             src="https://res.cloudinary.com/dpo25wgdo/image/upload/v1749065258/xtreme1_lhmgyp.png"
@@ -25,7 +25,6 @@ const Xtremegym = () => {
         <p className="font-bebas">Front End Developer</p>
       </div>
 
-      {/* Modal */}
       {isOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
@@ -51,4 +50,4 @@ const Xtremegym = () => {
     </>
   );
 };
-export default Xtremegym;
+export default SstProyect;

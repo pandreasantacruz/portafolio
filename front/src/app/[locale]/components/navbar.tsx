@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <div className="lg:hidden">
           <button
-            className="text-2xl transition hover:text-verde"
+            className="text-2xl transition"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <IoClose /> : <FiMenu />}
@@ -54,10 +54,7 @@ const Navbar = () => {
             >
               {t("home")}
             </a>
-            <a
-              href="#aboutme"
-              className=" bg-[#B3C3F3] transition hover:text-verde p-1"
-            >
+            <a href="#aboutme" className=" bg-[#B3C3F3] transition p-1">
               {t("aboutme")}
             </a>
             <LanguageSwitcher />
