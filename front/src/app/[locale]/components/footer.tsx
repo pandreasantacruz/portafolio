@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -10,16 +12,14 @@ const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="py-8 font-poppins bg-fondo ring-2 ring-verde ring-opacity-100">
+    <footer className="py-8 font-poppins bg-fondo ring-2 ring-opacity-100">
       <div className="grid grid-cols-1 gap-8 px-6 mx-auto transition max-w-7xl md:grid-cols-3">
-        <div className=" hover:text-verde">
+        <div>
           <h3 className="mb-3 text-lg font-semibold "> {t("h1")}</h3>
-          <p className="text-justify text-gray-400 hover:text-verde">
-            {t("p1")}
-          </p>
+          <p className="text-justify text-gray-400 ">{t("p1")}</p>
         </div>
 
-        <div className="transition hover:text-verde">
+        <div>
           <h3 className="pt-2 mb-3 text-lg font-semibold"> {t("h2")} </h3>
 
           <Link href="mailto:andreasantacruz123@gmail.com">
@@ -32,8 +32,8 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className=" hover:text-verde">
-          <h3 className="mb-3 text-lg font-semibold text-center dark:text-white hover:text-verde">
+        <div className="">
+          <h3 className="mb-3 text-lg font-semibold text-center dark:text-white ">
             {t("h3")}{" "}
           </h3>
           <div className="flex justify-center space-x-8">

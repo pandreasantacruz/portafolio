@@ -55,7 +55,7 @@ const CarouselXtrme = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-verde" : "bg-grisP"
+                index === currentIndex ? "bg-[#B3C3F3]" : "bg-[#EF3C62]"
               }`}
             ></button>
           ))}
