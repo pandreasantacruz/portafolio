@@ -35,7 +35,7 @@ export default function Home() {
           <section id="proyects">
             <Proyects />
           </section>
-          <section id="contactme">
+          <section id="contactMe">
             <Contact />
           </section>
         </div>

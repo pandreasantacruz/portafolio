@@ -37,68 +37,70 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full max-w-md p-8 shadow-lg bg-opacity-20 rounded-2xl backdrop-blur-md">
+    <div className="flex flex-col items-center w-full py-6">
       <h2 className="mb-6 text-3xl font-bold text-center text-foreground">
         Contáctame
       </h2>
 
-      <Formik
-        initialValues={{ name: "", email: "", message: "" }}
-        validationSchema={validationSchema}
-        onSubmit={handleOnSubmit}
-      >
-        {({ isSubmitting }) => (
-          <Form className="space-y-4">
-            <div className="space-y-2">
-              <Field
-                type="text"
-                name="name"
-                placeholder="Nombre"
-                className="w-full p-3 text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
-              />
-              <ErrorMessage
-                name="name"
-                component="div"
-                className="text-red-500"
-              />
+      <div className="flex items-center justify-center w-full max-w-md p-8 shadow-lg rounded-2xl">
+        <Formik
+          initialValues={{ name: "", email: "", message: "" }}
+          validationSchema={validationSchema}
+          onSubmit={handleOnSubmit}
+        >
+          {({ isSubmitting }) => (
+            <Form className="w-full space-y-4 border-[#E0004D]">
+              <div className="space-y-2">
+                <Field
+                  type="text"
+                  name="name"
+                  placeholder="Nombre"
+                  className="w-full p-3 border-2 border-[#B3C3F3]   rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
+                />
+                <ErrorMessage
+                  name="name"
+                  component="div"
+                  className="text-red-500"
+                />
 
-              <Field
-                type="email"
-                name="email"
-                placeholder="example@email.com"
-                className="w-full p-3 text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
-              />
-              <ErrorMessage
-                name="email"
-                component="div"
-                className="text-red-500"
-              />
+                <Field
+                  type="email"
+                  name="email"
+                  placeholder="example@email.com"
+                  className="w-full p-3 rounded-lg border-2 border-[#B3C3F3]  focus:outline-none focus:ring-2 focus:ring-verde"
+                />
+                <ErrorMessage
+                  name="email"
+                  component="div"
+                  className="text-red-500"
+                />
 
-              <Field
-                as="textarea"
-                name="message"
-                placeholder="Escribe tu mensaje"
-                className="w-full p-3 text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
-              />
-              <ErrorMessage
-                name="message"
-                component="div"
-                className="text-red-500"
-              />
-            </div>
+                <Field
+                  as="textarea"
+                  name="message"
+                  placeholder="Escribe tu mensaje"
+                  className="w-full p-3 rounded-lg  border-2 border-[#B3C3F3]  focus:outline-none focus:ring-2 focus:ring-verde"
+                />
+                <ErrorMessage
+                  name="message"
+                  component="div"
+                  className="text-red-500"
+                />
+              </div>
 
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className={`w-full font-semibold px-6 py-3 mt-4 transition rounded-md font-poppins bg-fondo text-foreground hover:bg-verde hover:scale-105 ring-2 ring-gray-300 ring-opacity-100 ${
-                isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-              }`}
-            >
-              {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
-            </button>
-          </Form>
-        )}
-      </Formik>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={`w-full font-semibold px-6 bg-[#B3C3F3] py-3 mt-4 transition rounded-md font-poppins bg-fondo text-foreground hover:bg-verde hover:scale-105 ring-2 ring-gray-300 ring-opacity-100 ${
+                  isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+              >
+                {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
+              </button>
+            </Form>
+          )}
+        </Formik>
+      </div>
     </div>
   );
 };

@@ -42,7 +42,11 @@ export default async function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${bebasNeue.variable} antialiased `}
       >
-        <ThemeProvider>
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem
+        >
           <NextIntlClientProvider>
             <Navbar />
             <Toaster
