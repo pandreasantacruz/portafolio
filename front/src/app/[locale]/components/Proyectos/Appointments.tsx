@@ -11,7 +11,7 @@ const Appointments = () => {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
+        className="flex flex-col items-center justify-center w-full max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
         onClick={() => setIsOpen(true)}
       >
         <h3 className="pb-2 font-sans font-bold text-center">CLINIC PROJECT</h3>

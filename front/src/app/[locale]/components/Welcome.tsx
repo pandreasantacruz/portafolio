@@ -18,7 +18,7 @@ const Welcome = () => {
       : "https://res.cloudinary.com/dpo25wgdo/image/upload/v1749146732/ImagenInicial_panluc.jpg";
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden mt-28 max-w-10xl ">
+    <div className="relative w-full mx-auto overflow-hidden mt-28 max-w-10xl border-b-8 border-[#E0004D] ">
       {" "}
       <motion.div
         initial={{ opacity: 0, x: -50 }}

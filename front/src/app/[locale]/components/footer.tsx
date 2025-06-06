@@ -15,7 +15,6 @@ const Footer = () => {
     <footer className="py-8 font-poppins bg-fondo ring-2 ring-opacity-100">
       <div className="grid grid-cols-1 gap-8 px-6 mx-auto transition max-w-7xl md:grid-cols-3">
         <div>
-          <h3 className="mb-3 text-lg font-semibold "> {t("h1")}</h3>
           <h3 className="mb-3 text-lg font-semibold "> {t("h1")}</h3>{" "}
           <p className="text-justify text-gray-400 ">{t("p1")}</p>
         </div>
