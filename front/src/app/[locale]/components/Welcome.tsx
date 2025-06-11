@@ -29,6 +29,7 @@ const Welcome = () => {
           <Image
             src={src}
             alt="Imagen"
+              key={theme}
             fill
             className="block object-contain dark:hidden"
           />
