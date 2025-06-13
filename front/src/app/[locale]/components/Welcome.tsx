@@ -12,6 +12,7 @@ const Welcome = () => {
   }, []);
 
   if (!mounted) return null;
+
   const src =
     theme === "dark"
       ? "https://res.cloudinary.com/dpo25wgdo/image/upload/v1749146685/ImagenInicialDark_hzdfee.jpg"
@@ -26,6 +27,7 @@ const Welcome = () => {
         transition={{ duration: 1 }}
       >
         <div className="relative w-full aspect-[16/9]" key={theme}>
+<<<<<<< HEAD
           <Image
             src={src}
             alt="Imagen Welcome"
@@ -33,6 +35,11 @@ const Welcome = () => {
             fill
             className="block object-contain dark:hidden"
           />
+=======
+          <Image src={src} alt="Imagen" fill className="block object-contain" />
+
+   
+>>>>>>> 233a48408d995bb35b9b19e06bb73319272c360c
         </div>
       </motion.div>
     </div>
