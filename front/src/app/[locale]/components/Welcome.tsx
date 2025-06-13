@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 const Welcome = () => {
-  const { theme, systemTheme } = useTheme();
+  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -12,7 +12,6 @@ const Welcome = () => {
   }, []);
 
   if (!mounted) return null;
-    const currentTheme = theme === "system" ? systemTheme : theme;
 
   const src =
     theme === "dark"
