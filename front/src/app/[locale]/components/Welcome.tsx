@@ -28,8 +28,8 @@ const Welcome = () => {
         <div className="relative w-full aspect-[16/9]" key={theme}>
           <Image
             src={src}
-            alt="Imagen"
-              key={theme}
+            alt="Imagen Welcome"
+            key={theme}
             fill
             className="block object-contain dark:hidden"
           />
