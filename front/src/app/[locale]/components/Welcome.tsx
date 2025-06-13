@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 const Welcome = () => {
-  const { theme } = useTheme();
+  const { theme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -12,6 +12,8 @@ const Welcome = () => {
   }, []);
 
   if (!mounted) return null;
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
   const src =
     theme === "dark"
       ? "https://res.cloudinary.com/dpo25wgdo/image/upload/v1749146685/ImagenInicialDark_hzdfee.jpg"
@@ -27,6 +29,8 @@ const Welcome = () => {
       >
         <div className="relative w-full aspect-[16/9]" key={theme}>
           <Image src={src} alt="Imagen" fill className="block object-contain" />
+
+   
         </div>
       </motion.div>
     </div>
