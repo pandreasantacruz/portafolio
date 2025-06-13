@@ -26,12 +26,7 @@ const Welcome = () => {
         transition={{ duration: 1 }}
       >
         <div className="relative w-full aspect-[16/9]" key={theme}>
-          <Image
-            src={src}
-            alt="Imagen"
-            fill
-            className="block object-contain dark:hidden"
-          />
+          <Image src={src} alt="Imagen" fill className="block object-contain" />
         </div>
       </motion.div>
     </div>
