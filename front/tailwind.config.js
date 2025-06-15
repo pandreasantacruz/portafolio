@@ -1,11 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["selector", '[data-theme="dark"]'],
+  darkMode: "class",
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./app/[locale]/**/*.{js,ts,jsx,tsx}",
+    "./src/app/[locale]/*.js",
+    "./src/app/[locale]/*.jsx",
+    "./src/app/[locale]/*.ts",
+    "./src/app/[locale]/*.tsx",
+    "./src/app/[locale]/*.mdx",
+    "./src/app/[locale]/*/*.js",
+    "./src/app/[locale]/*/*.jsx",
+    "./src/app/[locale]/*/*.ts",
+    "./src/app/[locale]/*/*.tsx",
+    "./src/app/[locale]/*/*.mdx",
+    "./src/app/[locale]/*/*/*.js",
+    "./src/app/[locale]/*/*/*.jsx",
+    "./src/app/[locale]/*/*/*.ts",
+    "./src/app/[locale]/*/*/*.tsx",
+    "./src/app/[locale]/*/*/*.mdx",
   ],
   theme: {
     extend: {

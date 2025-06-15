@@ -27,8 +27,8 @@ const Navbar = () => {
   console.log("Tema actual:", theme);
 
   return (
-    <div className="fixed top-0 z-50 w-full ">
-      <nav className="flex items-center justify-between h-24 px-4 mx-auto shadow-xl ring-2 ring-gray-300 ring-opacity-100">
+    <div className="fixed top-0 z-50 w-full">
+      <nav className="flex items-center justify-between h-24 px-4 mx-auto shadow-xl ring-2 ring-blueP ring-opacity-100">
         <div className="flex items-center gap-4">
           <img src={src} alt="logos" className="w-auto h-16" />
         </div>

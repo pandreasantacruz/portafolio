@@ -79,4 +79,8 @@ export const imgTech = [
     src: "https://res.cloudinary.com/dpo25wgdo/image/upload/v1749065025/illustrator_bqb8rr.png",
     label: "Ilustrator",
   },
+  {
+    src: "https://res.cloudinary.com/dpo25wgdo/image/upload/v1749950473/wordpress-logo-image-png-701751694773680sodsik7zlf_o425qv.png",
+    label: "WordPress",
+  },
 ];

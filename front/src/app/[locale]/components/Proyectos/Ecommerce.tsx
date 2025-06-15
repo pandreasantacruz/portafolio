@@ -31,7 +31,7 @@ const Ecommerce = () => {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="relative w-11/12 max-w-4xl max-h-full p-6 overflow-auto bg-white rounded-lg"
+            className="relative w-11/12 max-w-4xl max-h-full p-6 overflow-auto bg-blueP rounded-lg"
             onClick={(e) => e.stopPropagation()}
           >
             <button

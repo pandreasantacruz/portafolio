@@ -43,7 +43,7 @@ export default async function RootLayout({
         className={`${spaceGrotesk.variable} ${bebasNeue.variable} antialiased `}
       >
         <ThemeProvider
-      attribute="class"
+          attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange

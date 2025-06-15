@@ -6,7 +6,7 @@
   "Navbar": {
     "home": "HOME",
     "aboutme": "ABOUT ME",
-    "techskill": "TECHNICAL SKILL",
+    "techskill": "TECHNICAL SKILLS",
     "mywork": "MY WORK",
     "contactMe": "CONTACT ME"
   },
@@ -23,7 +23,7 @@
     "h3": "Hello! I'm Paula Andrea Santacruz — an Engineer and Full Stack Developer with a focus on Frontend. Passionate about technology, design, and sustainable development, I combine technical and creative skills to build innovative, functional, and visually engaging digital solutions."
   },
   "Technologies": {
-    "Th1": "TECHNICAL SKILL",
+    "Th1": "TECHNICAL SKILLS",
     "Tp1": "These are the main technologies I use to build solid, efficient, and scalable solutions."
   },
   "Proyects": {

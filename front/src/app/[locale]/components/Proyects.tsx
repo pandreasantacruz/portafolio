@@ -13,7 +13,7 @@ const Proyects = () => {
       <h2 className="font-sans text-center bg-[#B3C3F3] font-bold text-2xl sm:text-4xl md:text-4xl mt-8  py-2 px-4">
         {t("Ph1")}
       </h2>
-      <p className="mt-2 text-xl text-center font-bebas sm:text-base md:text-lg">
+      <p className="mt-2 text-xl text-center font-bebas sm:text-base md:text-2xl">
         {t("Pp1")}
       </p>
       <div className="flex flex-wrap justify-center gap-4 py-4">

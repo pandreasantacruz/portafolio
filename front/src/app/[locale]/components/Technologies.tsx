@@ -22,7 +22,7 @@ const Technologies = () => {
       <h2 className="font-sans bg-[#B3C3F3] font-bold text-2xl sm:text-4xl md:text-4xl mt-8 ml-auto py-2 mr-0 px-4 w-max">
         {t("Th1")}
       </h2>
-      <p className="mt-2 text-xl text-justify font-bebas sm:text-base md:text-lg">
+      <p className="mt-2 text-xl text-justify font-bebas sm:text-base md:text-2xl">
         {t("Tp1")}
       </p>
 

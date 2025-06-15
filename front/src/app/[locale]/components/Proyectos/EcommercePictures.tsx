@@ -28,7 +28,7 @@ const CarouselEcommerce = () => {
   }, [images.length]);
 
   return (
-    <div className="flex flex-col max-w-full gap-6 pb-4 overflow-hidden text-black bg-white md:flex-row dark:bg-black dark:text-white">
+    <div className="flex flex-col max-w-full gap-6 pb-4 overflow-hidden text-black bg-white md:flex-row dark:bg-blackP dark:text-white">
       {/* Carrusel */}
       <div className="relative w-full max-w-[300px] aspect-[4/5] mx-auto md:mx-0">
         <Image
@@ -64,15 +64,13 @@ const CarouselEcommerce = () => {
 
       {/* Texto */}
       <div className="flex flex-col justify-center w-full max-w-md px-4 space-y-4 md:px-0">
-        <p className="text-lg font-medium text-justify break-words font-bebas">
+        <p className="text-lg font-medium text-justify break-words">
           {t("ECh1")}
         </p>
         <p className="text-lg font-medium text-justify break-words font-bebas">
           {tP("Pr")}
         </p>
-        <p className="text-lg text-justify break-words font-bebas">
-          {t("ECh2")}
-        </p>
+        <p className="text-lg text-justify break-words">{t("ECh2")}</p>
         <div className="flex flex-row gap-4">
           <a
             target="_blank"
