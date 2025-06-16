@@ -49,7 +49,7 @@
     "SSTH2": "Desarrollé toda la interfaz de usuario con React, Next.js y Tailwind CSS, asegurando componentes dinámicos, responsivos y reutilizables. Diseñé flujos interactivos para la creación de empresas, empleados e inspecciones personalizadas. Implementé vistas adaptadas para distintos tipos de usuarios. Aseguré la accesibilidad y experiencia de usuario en dispositivos móviles y de escritorio. Coordiné el consumo de endpoints y la integración con el backend para gestionar datos de usuarios, inspecciones y métricas de cumplimiento."
   },
   "Contact": {
-    "C": "Contáctame",
+    "C": "CONTÁCTAME",
     "CN": "Nombre Completo",
     "CM": "Escribe tu mensaje",
     "CS": "Submit",

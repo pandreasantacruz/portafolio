@@ -18,8 +18,8 @@ const Technologies = () => {
   }, []);
 
   return (
-    <div className="px-4 pb-12 sm:px-8 lg:px-16 border-b-8 border-[#E0004D]">
-      <h2 className="font-sans bg-[#B3C3F3] font-bold text-2xl sm:text-4xl md:text-4xl mt-8 ml-auto py-2 mr-0 px-4 w-max">
+    <div className="px-4 pb-12 border-b-8 sm:px-8 lg:px-16 border-redP">
+      <h2 className="px-4 py-2 mt-8 ml-auto mr-0 font-sans text-2xl font-bold bg-blueP sm:text-4xl md:text-4xl w-max">
         {t("Th1")}
       </h2>
       <p className="mt-2 text-xl text-justify font-bebas sm:text-base md:text-2xl">
@@ -31,7 +31,7 @@ const Technologies = () => {
           <motion.div
             onClick={() => setCurrentIndex(index)}
             key={`${image.label}-${index}`}
-            className={`flex flex-col items-center justify-center w-20 sm:w-24 md:w-28 bg-[#B3C3F3] shadow-md rounded-lg transition-transform duration-300 hover:scale-105 ${
+            className={`flex flex-col items-center justify-center w-20 sm:w-24 md:w-28 bg-blueP shadow-md rounded-lg transition-transform duration-300 hover:scale-105 ${
               index === currentIndex ? "opacity-100" : "opacity-50"
             }`}
           >

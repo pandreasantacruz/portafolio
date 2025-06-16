@@ -49,7 +49,7 @@
     "SSTH2": "Built the entire user interface using React, Next.js, and Tailwind CSS, delivering dynamic, responsive, and reusable components. Designed interactive flows for creating companies, employees, and customizable inspections. Implemented user-specific views for better role-based experience. Ensured accessibility and a smooth UX across mobile and desktop devices. Integrated frontend with backend endpoints to manage users, inspections, and compliance metrics."
   },
   "Contact": {
-    "C": "Contact Me",
+    "C": "CONTACT ME",
     "CN": "Full Name",
     "CM": "Write your message",
     "CS": "Enviar Mensaje",

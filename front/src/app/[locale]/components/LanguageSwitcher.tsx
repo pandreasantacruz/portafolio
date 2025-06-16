@@ -17,7 +17,10 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <button onClick={toggleLocale} className="p-1 border rounded bg-[#B3C3F3]">
+    <button
+      onClick={toggleLocale}
+      className="p-1 text-black border rounded bg-blueP"
+    >
       {currentLocale === "es" ? "EN" : "ES"}
     </button>
   );

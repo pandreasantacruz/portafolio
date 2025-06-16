@@ -52,31 +52,31 @@ const Navbar = () => {
           <div className="flex flex-col items-center gap-4 py-4 text-black lg:flex-row lg:gap-8 lg:py-0">
             <a
               href="#welcome"
-              className="bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105 "
+              className="bg-blueP border rounded transition p-1 hover:bg-[#8fa3e6] hover:scale-105 "
             >
               {t("home")}
             </a>
             <a
               href="#aboutme"
-              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP border rounded transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("aboutme")}
             </a>
             <a
               href="#technologies"
-              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP border rounded transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("techskill")}
             </a>
             <a
               href="#proyects"
-              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP border rounded transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("mywork")}
             </a>
             <a
               href="#contactMe"
-              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP border rounded transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("contactMe")}
             </a>

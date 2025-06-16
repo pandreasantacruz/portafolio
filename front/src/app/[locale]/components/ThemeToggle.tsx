@@ -18,7 +18,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-      className="p-1 border rounded bg-[#B3C3F3] transition"
+      className="p-1 transition border rounded bg-blueP"
     >
       {currentTheme === "dark" ? "☀️" : "🌙"}
     </button>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const LoadingIndicator = () => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-black">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-blackP">
       <motion.div
         animate={{
           scale: [1, 2, 2, 1, 1],
