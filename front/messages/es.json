@@ -8,7 +8,7 @@
     "aboutme": "SOBRE MI",
     "techskill": "HABILIDADES TÉCNICAS",
     "mywork": "MIS PROYECTOS",
-    "contactMe": "CONTACTAME"
+    "contactMe": "CONTÁCTAME"
   },
   "Footer": {
     "h1": "Sobre mi",
@@ -45,7 +45,14 @@
     "Appo2": " Diseñé la interfaz de usuario en Figma, aplicando principios UX/UI. Desarrollé el frontend con React y TypeScript, asegurando una experiencia responsiva. Implementé el backend con Express, TypeScript y TypeORM. Diseñé y gestioné la base de datos en SQL. Integré todo el flujo de datos entre cliente y servidor. Desarrollé funcionalidades clave: agendamiento por especialidad, carga de historia clínica y motivo de consulta. Me encargué de todo el ciclo completo del desarrollo (fullstack)."
   },
   "Sst": {
-    "SSTH1": "MVP actualmente desarrollandose para la empresa Procimple (Colombia). Aplicación web que permite registrar empresas, asociar empleados y crear inspecciones dinámicas y personalizadas. Cada empresa puede gestionar sus propias inspecciones y llevarlas a cabo con métricas que permiten verificar el cumplimiento de normas de Seguridad y Salud en el Trabajo (SST).",
+    "SSTH1": "MVP desarrollado para la empresa Procimple (Colombia). Aplicación web que permite registrar empresas, asociar empleados y crear inspecciones dinámicas y personalizadas. Cada empresa puede gestionar sus propias inspecciones y llevarlas a cabo con métricas que permiten verificar el cumplimiento de normas de Seguridad y Salud en el Trabajo (SST).",
     "SSTH2": "Desarrollé toda la interfaz de usuario con React, Next.js y Tailwind CSS, asegurando componentes dinámicos, responsivos y reutilizables. Diseñé flujos interactivos para la creación de empresas, empleados e inspecciones personalizadas. Implementé vistas adaptadas para distintos tipos de usuarios. Aseguré la accesibilidad y experiencia de usuario en dispositivos móviles y de escritorio. Coordiné el consumo de endpoints y la integración con el backend para gestionar datos de usuarios, inspecciones y métricas de cumplimiento."
+  },
+  "Contact": {
+    "C": "Contáctame",
+    "CN": "Nombre Completo",
+    "CM": "Escribe tu mensaje",
+    "CS": "Submit",
+    "CSS": "Submitting..."
   }
 }

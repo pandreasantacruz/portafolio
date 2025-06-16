@@ -45,7 +45,14 @@
     "Appo2": "Designed the user interface in Figma with UX/UI principles. Built the frontend using React and TypeScript, ensuring full responsiveness. Developed the backend with Express, TypeScript, and TypeORM. Designed and managed the SQL database. Handled data flow between frontend and backend. Implemented key features: appointment scheduling by specialty, clinical history and consultation details. Led the entire development cycle as a fullstack developer."
   },
   "Sst": {
-    "SSTH1": "MVP currently  currently in development for Procimple (Colombia). A web application that allows companies to register, assign employees, and create dynamic, customizable inspections. Each company can manage its own inspections and execute them with performance metrics to verify compliance with Occupational Health and Safety (OHS) standards.",
+    "SSTH1": "MVP developed for Procimple (Colombia). A web application that allows companies to register, assign employees, and create dynamic, customizable inspections. Each company can manage its own inspections and execute them with performance metrics to verify compliance with Occupational Health and Safety (OHS) standards.",
     "SSTH2": "Built the entire user interface using React, Next.js, and Tailwind CSS, delivering dynamic, responsive, and reusable components. Designed interactive flows for creating companies, employees, and customizable inspections. Implemented user-specific views for better role-based experience. Ensured accessibility and a smooth UX across mobile and desktop devices. Integrated frontend with backend endpoints to manage users, inspections, and compliance metrics."
+  },
+  "Contact": {
+    "C": "Contact Me",
+    "CN": "Full Name",
+    "CM": "Write your message",
+    "CS": "Enviar Mensaje",
+    "CSS": "Enviando..."
   }
 }

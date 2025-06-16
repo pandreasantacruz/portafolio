@@ -6,6 +6,7 @@ import * as Yup from "yup";
 import { toast } from "react-hot-toast";
 import { contactService } from "../service/contact";
 import { IContact } from "../type/interface";
+import { useTranslations } from "next-intl";
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -20,6 +21,8 @@ const validationSchema = Yup.object({
 });
 
 const Contact = () => {
+  const t = useTranslations("Contact");
+
   const handleOnSubmit = async (
     contactData: IContact,
     { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
@@ -38,8 +41,8 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col items-center w-full py-6">
-      <h2 className="mb-6 text-3xl font-bold text-center text-foreground">
-        Contáctame
+      <h2 className="mb-6 text-3xl font-bold text-center font-bebas text-foreground">
+        {t("C")}
       </h2>
 
       <div className="flex items-center justify-center w-full max-w-md p-8 shadow-lg rounded-2xl">
@@ -54,7 +57,7 @@ const Contact = () => {
                 <Field
                   type="text"
                   name="name"
-                  placeholder="Nombre"
+                  placeholder={t("CN")}
                   className="w-full p-3 border-2 border-[#B3C3F3]   rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
                 />
                 <ErrorMessage
@@ -78,8 +81,8 @@ const Contact = () => {
                 <Field
                   as="textarea"
                   name="message"
-                  placeholder="Escribe tu mensaje"
-                  className="w-full p-3 rounded-lg  border-2 border-[#B3C3F3]  focus:outline-none focus:ring-2 focus:ring-verde"
+                  placeholder={t("CM")}
+                  className="w-full p-3 border-2 rounded-lg border-blueP focus:outline-none focus:ring-2 focus:ring-verde"
                 />
                 <ErrorMessage
                   name="message"
@@ -91,11 +94,11 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full font-semibold px-6 bg-[#B3C3F3] py-3 mt-4 transition rounded-md font-poppins bg-fondo text-foreground hover:bg-verde hover:scale-105 ring-2 ring-gray-300 ring-opacity-100 ${
+                className={`w-full  px-6 font-bebas bg-blueP py-3 mt-4 transition rounded-md font-poppins bg-fondo text-foreground hover:bg-verde hover:scale-105 ring-2 ring-gray-300 ring-opacity-100 ${
                   isSubmitting ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
-                {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
+                {isSubmitting ? t("CSS") : t("CS")}
               </button>
             </Form>
           )}

@@ -32,7 +32,10 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           <img src={src} alt="logos" className="w-auto h-16" />
         </div>
-
+        <div className="flex items-center gap-4">
+          <LanguageSwitcher />
+          <ThemeToggle />{" "}
+        </div>
         <div className="lg:hidden">
           <button
             className="text-2xl transition"
@@ -41,7 +44,6 @@ const Navbar = () => {
             {isOpen ? <IoClose /> : <FiMenu />}
           </button>
         </div>
-
         <div
           className={`${
             isOpen ? "block" : "hidden"
@@ -50,36 +52,34 @@ const Navbar = () => {
           <div className="flex flex-col items-center gap-4 py-4 text-black lg:flex-row lg:gap-8 lg:py-0">
             <a
               href="#welcome"
-              className="bg-[#B3C3F3] rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105 "
+              className="bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105 "
             >
               {t("home")}
             </a>
             <a
               href="#aboutme"
-              className=" bg-[#B3C3F3] rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("aboutme")}
             </a>
             <a
               href="#technologies"
-              className=" bg-[#B3C3F3] rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("techskill")}
             </a>
             <a
               href="#proyects"
-              className=" bg-[#B3C3F3] rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("mywork")}
             </a>
             <a
               href="#contactMe"
-              className=" bg-[#B3C3F3] rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
+              className=" bg-blueP rounded-full transition p-1 hover:bg-[#8fa3e6] hover:scale-105"
             >
               {t("contactMe")}
             </a>
-            <LanguageSwitcher />
-            <ThemeToggle />
           </div>
         </div>
       </nav>
