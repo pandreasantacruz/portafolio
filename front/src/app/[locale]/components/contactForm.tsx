@@ -25,12 +25,15 @@ const Contact = () => {
 
   const handleOnSubmit = async (
     contactData: IContact,
-    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
+    {
+      setSubmitting,
+      resetForm,
+    }: { setSubmitting: (isSubmitting: boolean) => void; resetForm: () => void }
   ) => {
     try {
       await contactService(contactData);
-
       toast.success("Mensaje enviado con éxito");
+      resetForm();
     } catch (error: any) {
       console.error("Error al enviar mensaje", error.message);
       toast.error(error.message || "Error desconocido");
