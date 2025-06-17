@@ -11,7 +11,7 @@ const SstProyect = () => {
   return (
     <>
       <div
-        className=" flex flex-col items-center justify-center w-full max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-[#EF3C62] hover:scale-110"
+        className="flex flex-col items-center justify-center w-full max-w-sm p-4 mx-auto transition-transform duration-300 border rounded-lg shadow cursor-pointer border-redP hover:scale-110"
         onClick={() => setIsOpen(true)}
       >
         <h3 className="pb-2 font-sans font-bold text-center">OHS MONITORING</h3>
@@ -27,11 +27,11 @@ const SstProyect = () => {
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-blackP bg-opacity-80"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-blackP bg-opacity-80"
           onClick={() => setIsOpen(false)} // cerrar al clicar fuera
         >
           <div
-            className="relative w-11/12 max-w-4xl max-h-full p-6 overflow-auto bg-blueP rounded-lg"
+            className="relative w-11/12 max-w-4xl max-h-full p-6 overflow-auto rounded-lg bg-blueP"
             onClick={(e) => e.stopPropagation()} // no cerrar si clic adentro
           >
             <button
@@ -43,7 +43,7 @@ const SstProyect = () => {
             </button>
 
             <h2 className="mb-4 text-3xl font-bold text-black">{title}</h2>
-            <div className=" text-black bg-white md:flex-row dark:bg-blackP dark:text-white">
+            <div className="text-black bg-white md:flex-row dark:bg-blackP dark:text-white">
               {content}
             </div>
           </div>

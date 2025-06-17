@@ -28,11 +28,11 @@ const Xtremegym = () => {
       {/* Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-blackP bg-opacity-80"
           onClick={() => setIsOpen(false)} // cerrar al clicar fuera
         >
           <div
-            className="relative w-11/12 max-w-4xl max-h-full p-6 overflow-auto bg-blueP rounded-lg"
+            className="relative w-11/12 max-w-4xl max-h-full p-6 overflow-auto rounded-lg bg-blueP"
             onClick={(e) => e.stopPropagation()} // no cerrar si clic adentro
           >
             <button
